@@ -1,0 +1,13 @@
+# Abaikan semua file secara default
+*
+
+# Jangan abaikan direktori (agar Git tetap bisa masuk ke subfolder jika ada)
+!*/
+
+# Izinkan (jangan abaikan) file Jupyter Notebooks
+!*.ipynb
+!*.md
+!*.png
+# Izinkan file gitignore ini sendiri
+!.gitignore
+    
