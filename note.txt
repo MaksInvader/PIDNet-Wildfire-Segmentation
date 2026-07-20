@@ -1,0 +1,9 @@
+To load the model later:
+from pathlib import Path
+import json, torch
+model_dir = Path('pidnet_fire_smoke_model_best')
+cfg = json.loads((model_dir / 'config.json').read_text())
+model = build_pidnet_model(cfg['model_name'], cfg['num_classes'])
+state_dict = torch.load(model_dir / 'pytorch_model.bin', map_location='cpu')
+model.load_state_dict(state_dict, strict=True)
+model.eval()

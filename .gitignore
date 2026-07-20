@@ -1,13 +1,61 @@
-# Abaikan semua file secara default
-*
+# ========================================
+# IGNORE MASSIVE DATASETS & CHECKPOINTS
+# ========================================
+*.rar
+*.zip
+*.tar.gz
+*.h5
+*.npy
+*.npz
+*.ckpt
+*.pth
+*.pt
+*.tar
 
-# Jangan abaikan direktori (agar Git tetap bisa masuk ke subfolder jika ada)
-!*/
+# Ignore huge directories
+pruned_dataset*/
+archive/
+checkpoints/
+*_model_best/
+*_model_best_*/
 
-# Izinkan (jangan abaikan) file Jupyter Notebooks
-!*.ipynb
-!*.md
-!*.png
-# Izinkan file gitignore ini sendiri
-!.gitignore
-    
+# ========================================
+# IGNORE LOGS, CACHES & TEMP FILES
+# ========================================
+logs/
+logs_*/
+metrics/
+metrics_*/
+runs/
+__pycache__/
+*.py[cod]
+*$py.class
+*.bak*
+data_splits*.json
+
+# ========================================
+# IGNORE LATEX BUILD ARTIFACTS
+# ========================================
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+test_tikz.*
+*.tex
+*.svg
+
+# ========================================
+# IGNORE SCRATCH SCRIPTS
+# ========================================
+fix_script*.py
+extracted_code.py
+
+
+# ========================================
+# ALLOWED TRACKING
+# ========================================
+# The rules above explicitly block the massive files you don't want.
+# This means your README.md, *.ipynb Notebooks, and any *.py inference 
+# scripts you wrote (which you definitely want to keep for reviewers!) 
+# will be safely tracked.

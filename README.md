@@ -4,7 +4,7 @@
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Framework: PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white)](#)
-  [![Paper: ICoDSA 2026](https://img.shields.io/badge/Paper-ICoDSA_2026-blue.svg)](#)
+  <!-- [![Paper: ICoDSA 2026](https://img.shields.io/badge/Paper-ICoDSA_2026-blue.svg)](#) -->
 
   **Official PyTorch Implementation for the Paper:**  
   *"Combating Extreme Class Imbalance in Semantic Segmentation for Early Wildfire Detection"*
